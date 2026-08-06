@@ -7,13 +7,10 @@ import {
   BookOpen,
   Sparkles,
   ArrowRight,
-  Laptop,
-  Cpu,
-  Share2,
-  Layers,
   GraduationCap,
 } from 'lucide-react';
 import { STUDENT_INFO } from '../data/portfolioData';
+import heroImage from '../images/foto.png';
 
 interface HeroProps {
   onExplorePractices: () => void;
@@ -131,76 +128,12 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* Right Column: Visual Composition Illustration */}
           <div className="lg:col-span-5 relative flex justify-center">
-            <div className="relative w-full max-w-md bg-gradient-to-tr from-slate-900 via-indigo-950 to-purple-900 rounded-3xl p-6 sm:p-8 shadow-2xl text-white border border-indigo-500/20 overflow-hidden group">
-              {/* Decorative Lighting Effects */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-purple-500/30 rounded-full blur-2xl pointer-events-none" />
-              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-indigo-500/30 rounded-full blur-2xl pointer-events-none" />
-
-              {/* Graphic Mockup Header */}
-              <div className="flex items-center justify-between pb-4 border-b border-indigo-800/60 mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-rose-500" />
-                  <div className="w-3 h-3 rounded-full bg-amber-500" />
-                  <div className="w-3 h-3 rounded-full bg-emerald-500" />
-                </div>
-                <span className="text-xs font-mono text-indigo-300/80 bg-indigo-900/60 px-2.5 py-1 rounded-full border border-indigo-700/50">
-                  IA & EdTech • Univalle
-                </span>
-              </div>
-
-              {/* Composition Center Graphics */}
-              <div className="space-y-6 relative z-10">
-                <div className="relative bg-indigo-900/40 rounded-2xl p-5 border border-indigo-700/50 backdrop-blur-md">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 to-indigo-500 flex items-center justify-center text-white shadow-md">
-                        <Laptop className="w-5 h-5" />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-bold text-white">Laptop & Aula Virtual</h4>
-                        <p className="text-xs text-indigo-200">Innovación Educativa</p>
-                      </div>
-                    </div>
-                    <span className="text-xs font-bold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded-md border border-emerald-800/50">
-                      9/9 Prácticas
-                    </span>
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-2 pt-2 text-center text-xs">
-                    <div className="bg-slate-900/60 p-2 rounded-xl border border-indigo-800/40">
-                      <Cpu className="w-4 h-4 mx-auto text-sky-400 mb-1" />
-                      <span className="text-[10px] text-slate-300 block">IA Generativa</span>
-                    </div>
-                    <div className="bg-slate-900/60 p-2 rounded-xl border border-indigo-800/40">
-                      <Layers className="w-4 h-4 mx-auto text-purple-400 mb-1" />
-                      <span className="text-[10px] text-slate-300 block">Diseño UX/UI</span>
-                    </div>
-                    <div className="bg-slate-900/60 p-2 rounded-xl border border-indigo-800/40">
-                      <Share2 className="w-4 h-4 mx-auto text-emerald-400 mb-1" />
-                      <span className="text-[10px] text-slate-300 block">Co-creación</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Highlight Card */}
-                <div className="bg-gradient-to-r from-purple-900/60 to-indigo-900/60 rounded-2xl p-4 border border-purple-500/30 backdrop-blur-md flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-purple-600/30 text-purple-300 flex items-center justify-center text-xl shrink-0 font-extrabold border border-purple-400/30">
-                    60%
-                  </div>
-                  <div>
-                    <p className="text-xs text-purple-200 font-medium">Evaluación del Módulo</p>
-                    <p className="text-xs text-white/90 leading-tight">
-                      Evidencias de aprendizaje continuo y autovaloración reflexiva.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="text-center pt-1">
-                  <p className="text-[11px] text-indigo-300 italic">
-                    “Conectando la tecnología con el sentido humano en la educación”
-                  </p>
-                </div>
-              </div>
+            <div className="relative w-full max-w-md rounded-3xl shadow-2xl overflow-hidden border border-indigo-500/20">
+              <img
+                src={heroImage}
+                alt="Ilustración de innovación y tecnología en la educación superior"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

@@ -54,4 +54,5 @@ export interface ResourceItem {
   url: string;
   iconName: string;
   tag: string;
+  practiceId: number;
 }

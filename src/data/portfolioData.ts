@@ -1,4 +1,20 @@
 import { Practice, TimelineStep, ResourceItem } from '../types/portfolio';
+import imgSanders from '../images/img_sanders.png';
+import imgLienzoMicrosoft from '../images/lienzodeMicrosoft.png';
+import imgMemeNosVemos from '../images/memeNosVemos.png';
+import imgCoDiagnostico1 from '../images/co-diagnóstico1.png';
+import imgCoDiagnostico2 from '../images/co-diagnóstico2.png';
+import imgCoDiagnostico3 from '../images/co-diagnóstico3.png';
+import imgCoDiagnostico4 from '../images/co-diagnóstico4.png';
+import imgRecursosInnovamentes from '../images/recursosInnovamentes.png';
+import imgCaptura1Prompt from '../images/captura1prompt.png';
+import imgCaptura2PresentacionGpt from '../images/captura2_presentaciongpt.png';
+import imgCaptura3Formulario from '../images/captura3_formulario.png';
+import imgCapturaGrupo2Teams from '../images/capturagrupo2Teams.png';
+import imgChatWhatsapp from '../images/chatWhatsapp.png';
+import imgCapturaPublicacionTeams from '../images/capturaPublicacionTeams.png';
+import imgCapturaGoogleForms from '../images/capturaGoogleforms.png';
+import imgBitwarden from '../images/bitwarden.png';
 
 // ==========================================
 // INFORMACIÓN GENERAL DE LA ESTUDIANTE Y MÓDULO
@@ -62,8 +78,7 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p1-img1',
-        /* NOTA PARA ZULEMA: Cambiar esta URL por tu imagen real de Sander's Salón */
-        src: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80',
+        src: imgSanders,
         alt: 'Proyecto de identidad visual y propuesta digital de Sander’s Salón y Peluquería Unisex',
         caption: 'Evidencia compartida: Identidad visual y experiencia UX/UI para Sander’s Salón y Peluquería Unisex.',
       },
@@ -95,8 +110,7 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p2-img1',
-        /* NOTA PARA ZULEMA: Reemplazar por la captura completa del lienzo de Microsoft Whiteboard */
-        src: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80',
+        src: imgLienzoMicrosoft,
         alt: 'Captura completa del lienzo co-creado en Microsoft Whiteboard',
         caption: 'Captura del lienzo colaborativo: De la educación tradicional al aprendizaje inmersivo e IA.',
       },
@@ -122,8 +136,7 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p3-img1',
-        /* NOTA PARA ZULEMA: Reemplazar por la imagen real del meme y su adhesivo explicativo */
-        src: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80',
+        src: imgMemeNosVemos,
         alt: 'Meme pedagógico: ¡Ponle más tecnología! vs Mejor ponle más sentido pedagógico',
         caption: 'Meme elaborado en Canva con su correspondiente nota adhesiva de postura y reflexión pedagógica.',
       },
@@ -149,29 +162,25 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p4-img1',
-        /* NOTA PARA ZULEMA: Reemplazar con la captura 1 del co-diagnóstico */
-        src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
+        src: imgCoDiagnostico1,
         alt: 'Pregunta 1: Aplicación de innovación y tecnología en educación superior',
         caption: 'Imagen 1: Respuesta sobre la aplicación de innovación en clases interactivas.',
       },
       {
         id: 'p4-img2',
-        /* NOTA PARA ZULEMA: Reemplazar con la captura 2 del co-diagnóstico */
-        src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80',
+        src: imgCoDiagnostico2,
         alt: 'Pregunta 2: Herramientas tecnológicas que más utilizo',
         caption: 'Imagen 2: Herramientas más utilizadas (ChatGPT, NotebookLM, Stitch, Figma, etc.).',
       },
       {
         id: 'p4-img3',
-        /* NOTA PARA ZULEMA: Reemplazar con la captura 3 del co-diagnóstico */
-        src: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80',
+        src: imgCoDiagnostico3,
         alt: 'Pregunta 3: Descripción del uso de Stitch',
         caption: 'Imagen 3: Explicación del uso de Stitch para prototipado rápido de interfaces.',
       },
       {
         id: 'p4-img4',
-        /* NOTA PARA ZULEMA: Reemplazar con la captura 4 del co-diagnóstico */
-        src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+        src: imgCoDiagnostico4,
         alt: 'Pregunta 4: Herramientas que me gustaría aprender',
         caption: 'Imagen 4: Interés de aprendizaje en NotebookLM y Perplexity para investigación.',
       },
@@ -235,8 +244,7 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p5-img1',
-        /* NOTA PARA ZULEMA: Reemplazar por la captura de los recursos de Innovamentes */
-        src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
+        src: imgRecursosInnovamentes,
         alt: 'Captura de recursos desarrollados por el equipo Innovamentes',
         caption: 'Recursos digitales del grupo Innovamentes: presentación, video, podcast e imágenes.',
       },
@@ -262,22 +270,19 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p6-img1',
-        /* NOTA PARA ZULEMA: Reemplazar por captura 1 (prompt y código Apps Script) */
-        src: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80',
+        src: imgCaptura1Prompt,
         alt: 'Imagen 1: Prompt utilizado en ChatGPT y código generado en Google Apps Script',
         caption: 'Imagen 1: Prompt detallado para generar código ejecutable de Google Forms.',
       },
       {
         id: 'p6-img2',
-        /* NOTA PARA ZULEMA: Reemplazar por captura 2 (presentación ChatGPT) */
-        src: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
+        src: imgCaptura2PresentacionGpt,
         alt: 'Imagen 2: Presentación general de ChatGPT como recurso de IA',
         caption: 'Imagen 2: Recomendación de ChatGPT como recurso de automatización educativa.',
       },
       {
         id: 'p6-img3',
-        /* NOTA PARA ZULEMA: Reemplazar por captura 3 (formulario generado en Google Forms) */
-        src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+        src: imgCaptura3Formulario,
         alt: 'Imagen 3: Aplicación específica y formulario automatizado en Google Forms',
         caption: 'Imagen 3: Formulario autogenerado mediante la ejecución del script.',
       },
@@ -327,8 +332,7 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p7-img1',
-        /* NOTA PARA ZULEMA: Reemplazar por la captura de la publicación del Grupo 2 en Teams */
-        src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+        src: imgCapturaGrupo2Teams,
         alt: 'Captura de la publicación del Grupo 2 en Teams para la práctica Wikimediaciones',
         caption: 'Publicación en Teams con la presentación Pecha Kucha y recursos de NotebookLM.',
       },
@@ -354,15 +358,13 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p8-img1',
-        /* NOTA PARA ZULEMA: Reemplazar con la captura completa del chat de WhatsApp con Fer */
-        src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80',
+        src: imgChatWhatsapp,
         alt: 'Imagen 1: Conversación completa de WhatsApp con Fer expresando reconocimiento sincero',
         caption: 'Imagen 1: Captura de la conversación de WhatsApp con mi mejor amiga Fer.',
       },
       {
         id: 'p8-img2',
-        /* NOTA PARA ZULEMA: Reemplazar con la captura de la publicación en Teams */
-        src: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=1200&q=80',
+        src: imgCapturaPublicacionTeams,
         alt: 'Imagen 2: Publicación de la reflexión en el equipo de Microsoft Teams',
         caption: 'Imagen 2: Reflexión en Teams sobre el impacto de la retroalimentación positiva.',
       },
@@ -388,15 +390,13 @@ export const PRACTICES: Practice[] = [
     images: [
       {
         id: 'p9-img1',
-        /* NOTA PARA ZULEMA: Reemplazar con captura del tutorial de Google Forms */
-        src: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80',
+        src: imgCapturaGoogleForms,
         alt: 'Imagen 1: Publicación del tutorial de automatización de encuestas en Google Forms',
         caption: 'Imagen 1: Tutorial de ChatGPT y Apps Script para encuestas automáticas.',
       },
       {
         id: 'p9-img2',
-        /* NOTA PARA ZULEMA: Reemplazar con captura del tutorial de Bitwarden */
-        src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80',
+        src: imgBitwarden,
         alt: 'Imagen 2: Publicación del tutorial de Bitwarden para ciberseguridad y contraseñas',
         caption: 'Imagen 2: Tutorial de ciberseguridad y gestión de contraseñas con Bitwarden.',
       },
@@ -525,10 +525,10 @@ Reconozco que todavía necesito profundizar en algunas plataformas orientadas a 
   },
   quantitative: {
     title: 'Autovaloración cuantitativa',
-    score: '78 / 80',
-    maxScore: 80,
-    currentScore: 78,
-    percentage: 97.5,
+    score: '60 / 60',
+    maxScore: 60,
+    currentScore: 80,
+    percentage: 100,
     content: `Considero esta valoración porque cumplí con las prácticas solicitadas, participé activamente en los trabajos y elaboré diferentes recursos para enriquecer las propuestas. También reconozco que siempre existen aspectos por mejorar, especialmente la profundización en algunas herramientas y la capacidad de sintetizar ciertos contenidos.`,
   },
 };
@@ -545,6 +545,7 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://drive.google.com/drive/folders/1f4je30QueBCC0av8amg3I0UsjiPtZbT8?usp=sharing',
     iconName: 'Folder',
     tag: 'Google Drive',
+    practiceId: 5,
   },
   {
     id: 'res-2',
@@ -554,6 +555,7 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://docs.google.com/presentation/d/1QrWvv2i2ATFzVqaU8K9onYHI98EJ8V7z/edit?usp=sharing&ouid=103275696795766931412&rtpof=true&sd=true',
     iconName: 'FileText',
     tag: 'Google Slides',
+    practiceId: 5,
   },
   {
     id: 'res-3',
@@ -563,6 +565,7 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://canva.link/cakens7j5qakf6w',
     iconName: 'Image',
     tag: 'Canva',
+    practiceId: 5,
   },
   {
     id: 'res-4',
@@ -572,6 +575,7 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://drive.google.com/file/d/1haOIwFO_CynFYLyZTFoR-ilGNs9x6CPn/view?usp=drive_link',
     iconName: 'Video',
     tag: 'MP4 / Drive',
+    practiceId: 5,
   },
   {
     id: 'res-5',
@@ -581,6 +585,7 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://drive.google.com/file/d/1CUVLOLLEgdHnMbfHziyOmibXhe2r8eSz/view?usp=drive_link',
     iconName: 'Headphones',
     tag: 'Audio MP3',
+    practiceId: 5,
   },
   {
     id: 'res-6',
@@ -590,6 +595,7 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://docs.google.com/document/d/1Mh13vINX9mxlbyllQY_cC9f_e8IuhkSAXGfhQ5CUWmU/edit?usp=drive_link',
     iconName: 'FileText',
     tag: 'Google Docs',
+    practiceId: 5,
   },
   {
     id: 'res-7',
@@ -599,6 +605,7 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://docs.google.com/presentation/d/1R_Q6FYhyO7Xuzjo0Yw_jUDsDF6kDVYal/edit?usp=sharing&ouid=103275696795766931412&rtpof=true&sd=true',
     iconName: 'Presentation',
     tag: 'Google Slides',
+    practiceId: 7,
   },
   {
     id: 'res-8',
@@ -608,33 +615,37 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://univalleedu.sharepoint.com/:v:/s/C-M-EDUCACINSUPERIORV1-EVALUACINENLAEDUCACINSUPERIOR-2026/IQDi8GraIR2_Qo2QY45CnNqUAeKVAnOsy1tmj-Amneyho40?e=qbcf3i',
     iconName: 'Video',
     tag: 'SharePoint Video',
+    practiceId: 7,
   },
   {
     id: 'res-9',
     title: 'Audio Storytelling: "25 páginas para mañana"',
     category: 'Podcast',
     description: 'Canción y narración generada en Suno para acompañar la historia de Valeria.',
-    url: 'https://docs.google.com/presentation/d/1R_Q6FYhyO7Xuzjo0Yw_jUDsDF6kDVYal/edit?usp=sharing',
+    url: 'https://drive.google.com/file/d/1tXaawtBbC-hJVjNAk-0EKypM-O0lVX2Z/view?usp=drive_link',
     iconName: 'Music',
     tag: 'Suno Audio',
+    practiceId: 7,
   },
   {
     id: 'res-10',
     title: 'ChatGPT - Prompt & Apps Script',
     category: 'Herramientas',
     description: 'Herramienta de IA utilizada para automatizar formularios de Google Forms mediante código.',
-    url: 'https://chatgpt.com',
+    url: 'https://docs.google.com/presentation/d/1XxpBbmrSPpgDPQyZt4FZ-0XKmU6E7Bnvhjg-D5mqwy4/edit?slide=id.g3f5b67e6594_10_12#slide=id.g3f5b67e6594_10_12',
     iconName: 'Bot',
     tag: 'Inteligencia Artificial',
+    practiceId: 6,
   },
   {
     id: 'res-11',
     title: 'NotebookLM por Google',
     category: 'Herramientas',
-    description: 'Asistente de IA para sintetizar documentos académicos y generar guías de estudio.',
-    url: 'https://notebooklm.google.com',
+    description: 'Asistente de IA para sintetizar documentos académicos y generar presentaciones y otros recursos.',
+    url: 'https://docs.google.com/presentation/d/1R_Q6FYhyO7Xuzjo0Yw_jUDsDF6kDVYal/edit?usp=drive_link&ouid=103275696795766931412&rtpof=true&sd=true',
     iconName: 'BookOpen',
     tag: 'IA para Investigación',
+    practiceId: 7,
   },
   {
     id: 'res-12',
@@ -644,5 +655,6 @@ export const RESOURCES_DATA: ResourceItem[] = [
     url: 'https://bitwarden.com',
     iconName: 'Shield',
     tag: 'Seguridad Digital',
+    practiceId: 9,
   },
 ];

@@ -11,19 +11,18 @@ import {
   GraduationCap,
 } from 'lucide-react';
 import { PRACTICES, STUDENT_INFO } from '../data/portfolioData';
+import portfolioPdf from '../data/Trabajo_Zule.pdf';
 
 interface NavbarProps {
   darkMode: boolean;
   setDarkMode: (val: boolean) => void;
   onOpenPractice: (id: number) => void;
-  onOpenPdfModal: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   darkMode,
   setDarkMode,
   onOpenPractice,
-  onOpenPdfModal,
 }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [scrolled, setScrolled] = useState(false);
@@ -212,13 +211,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
 
           {/* Botón Destacado: Descargar Portafolio PDF */}
-          <button
-            onClick={onOpenPdfModal}
+          <a
+            href={portfolioPdf}
+            download="Portafolio_Zulema_Vicente_Paca.pdf"
             className="hidden sm:flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
             <Download className="w-3.5 h-3.5" />
             <span>Descargar Portafolio PDF</span>
-          </button>
+          </a>
 
           {/* Mobile Hamburger Button */}
           <button
@@ -300,16 +300,15 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           <div className="pt-2 border-t border-slate-100 dark:border-slate-800">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenPdfModal();
-              }}
+            <a
+              href={portfolioPdf}
+              download="Portafolio_Zulema_Vicente_Paca.pdf"
+              onClick={() => setMobileMenuOpen(false)}
               className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-purple-700 via-indigo-700 to-indigo-900 text-white text-sm font-semibold rounded-xl shadow-md"
             >
               <Download className="w-4 h-4" />
               <span>Descargar portafolio PDF</span>
-            </button>
+            </a>
           </div>
         </div>
       )}

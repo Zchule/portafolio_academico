@@ -14,7 +14,7 @@ import {
   Music,
   Shield,
 } from 'lucide-react';
-import { RESOURCES_DATA } from '../data/portfolioData';
+import { RESOURCES_DATA, PRACTICES } from '../data/portfolioData';
 import { ResourceItem } from '../types/portfolio';
 
 const ICON_MAP: Record<string, LucideIcon> = {
@@ -97,6 +97,7 @@ export const ResourcesLibrary: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredResources.map((res: ResourceItem) => {
             const IconComp = ICON_MAP[res.iconName] || ExternalLink;
+            const practice = PRACTICES.find((p) => p.id === res.practiceId);
 
             return (
               <div
@@ -120,6 +121,12 @@ export const ResourcesLibrary: React.FC = () => {
                   <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                     {res.description}
                   </p>
+
+                  {practice && (
+                    <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-100 dark:border-indigo-900 px-2.5 py-1 rounded-full">
+                      Práctica {practice.numberStr} · {practice.title}
+                    </span>
+                  )}
                 </div>
 
                 <a

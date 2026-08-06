@@ -34,7 +34,10 @@ export const AboutMe: React.FC = () => {
                       {STUDENT_INFO.name}
                     </h3>
                     <p className="text-sm text-indigo-600 dark:text-indigo-400 font-semibold">
-                      Diseñadora UX/UI & EdTech
+                      Diseñadora UX/UI
+                    </p>
+                    <p className="text-sm dark:text-indigo-400 font-semibold">
+                      ING. INDUSTRIAL Y DE SISTEMAS
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
                       {STUDENT_INFO.university}
@@ -53,7 +56,7 @@ export const AboutMe: React.FC = () => {
                   </div>
                   <div className="flex items-center gap-3 text-xs text-slate-700 dark:text-slate-300">
                     <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                    <span>Especialista en Experiencia de Usuario & IA</span>
+                    <span>Especialista en Experiencia de Usuario</span>
                   </div>
                 </div>
 

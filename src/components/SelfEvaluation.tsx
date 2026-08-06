@@ -10,7 +10,7 @@ export const SelfEvaluation: React.FC = () => {
     setCelebrated(true);
     confetti({
       particleCount: 80,
-      spread: 70,
+      spread: 80,
       origin: { y: 0.6 },
       colors: ['#4F46E5', '#9333EA', '#10B981', '#F59E0B', '#3B82F6'],
     });

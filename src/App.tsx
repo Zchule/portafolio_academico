@@ -18,14 +18,12 @@ import { SelfEvaluation } from './components/SelfEvaluation';
 import { ResourcesLibrary } from './components/ResourcesLibrary';
 import { Footer } from './components/Footer';
 import { LightboxModal } from './components/LightboxModal';
-import { PdfExportModal } from './components/PdfExportModal';
 import { PracticeImage } from './types/portfolio';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [selectedPracticeId, setSelectedPracticeId] = useState<number | null>(null);
   const [lightboxImage, setLightboxImage] = useState<PracticeImage | null>(null);
-  const [pdfModalOpen, setPdfModalOpen] = useState<boolean>(false);
 
   // Sync dark mode class with <html> element
   useEffect(() => {
@@ -61,7 +59,6 @@ export default function App() {
         darkMode={darkMode}
         setDarkMode={setDarkMode}
         onOpenPractice={(id) => setSelectedPracticeId(id)}
-        onOpenPdfModal={() => setPdfModalOpen(true)}
       />
 
       {/* Main Page Content Sections */}
@@ -109,11 +106,6 @@ export default function App() {
       <LightboxModal
         image={lightboxImage}
         onClose={() => setLightboxImage(null)}
-      />
-
-      <PdfExportModal
-        isOpen={pdfModalOpen}
-        onClose={() => setPdfModalOpen(false)}
       />
     </div>
   );
